@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmailCell" rowHeight="119" id="KGk-i7-Jjw" customClass="EmailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLS-f2-p6g">
+                        <rect key="frame" x="48" y="8" width="254" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Ky0-a1-xi5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.52628195290000002" green="0.52669829130000001" blue="0.52634644509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unchecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="hiY-q3-hoX">
+                        <rect key="frame" x="8" y="8" width="32" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="X1x-71-JIN"/>
+                            <constraint firstAttribute="height" constant="29" id="tib-Qc-HJs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General promotions, updates, news about Beyond Broker " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWf-IS-7D1">
+                        <rect key="frame" x="48" y="36" width="254" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="254" id="Wri-ci-IX3"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="xmb-AL-I3j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hiY-q3-hoX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="189-7i-E03"/>
+                    <constraint firstItem="qWf-IS-7D1" firstAttribute="top" secondItem="XLS-f2-p6g" secondAttribute="bottom" id="5vm-5z-fcX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XLS-f2-p6g" secondAttribute="trailing" constant="10" id="Tz2-dr-Ad3"/>
+                    <constraint firstItem="qWf-IS-7D1" firstAttribute="leading" secondItem="XLS-f2-p6g" secondAttribute="leading" id="Yga-9o-rcA"/>
+                    <constraint firstItem="XLS-f2-p6g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="bIz-rp-cpy"/>
+                    <constraint firstItem="hiY-q3-hoX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cb4-ag-q6y"/>
+                    <constraint firstItem="qWf-IS-7D1" firstAttribute="trailing" secondItem="XLS-f2-p6g" secondAttribute="trailing" id="kyK-cl-M0Q"/>
+                    <constraint firstItem="XLS-f2-p6g" firstAttribute="leading" secondItem="hiY-q3-hoX" secondAttribute="trailing" constant="8" id="tS3-rB-KUv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgViewCheck" destination="hiY-q3-hoX" id="ipB-U7-jOa"/>
+                <outlet property="lblDescrption" destination="qWf-IS-7D1" id="6WR-BP-4hV"/>
+                <outlet property="lblTitle" destination="XLS-f2-p6g" id="oUs-gj-6hk"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="89"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unchecked.png" width="19" height="19"/>
+    </resources>
+</document>
